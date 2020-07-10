@@ -7,9 +7,9 @@ description = "A cross-shell env sourcing command"
 license = "GPL-3.0"
 keywords = ["env", "cli", "cross-env"]
 repository = "https://github.com/silver-panda/xenv"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dirs = "3.0.1"
 eyre = "0.6.0"

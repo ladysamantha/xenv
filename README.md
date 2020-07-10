@@ -1,5 +1,7 @@
 # xenv
 
+![GitHub Actions](https://github.com/silver-panda/xenv/workflows/CI/badge.svg)
+
 A cross-shell env sourcing command.
 
 I use [fish](https://fishshell.com) a lot, but I also like to do

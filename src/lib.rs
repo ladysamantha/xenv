@@ -9,6 +9,9 @@ where
 
     use eyre::Report;
 
+    #[cfg(windows)]
+    use eyre::WrapErr;
+
     set_env_from_file(env_file);
 
     #[cfg(windows)]

@@ -1,6 +1,5 @@
 use std::{env, process::Command};
 
-#[cfg(unix)]
 pub fn run_cmd<I>(cmd: String, env_file: String, args: I) -> eyre::Result<()>
 where
     I: Iterator<Item = <std::env::Args as Iterator>::Item>,

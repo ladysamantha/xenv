@@ -4,7 +4,9 @@ pub fn run_cmd<I>(cmd: String, env_file: String, args: I) -> eyre::Result<()>
 where
     I: Iterator<Item = <std::env::Args as Iterator>::Item>,
 {
+    #[cfg(unix)]
     use std::os::unix::process::CommandExt;
+
     use eyre::Report;
 
     set_env_from_file(env_file);
